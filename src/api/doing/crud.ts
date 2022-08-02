@@ -1,19 +1,21 @@
 export interface TodoItem {
-  id: number;
-  text: string;
-  done: boolean;
+  id?: string;
+  name?: string;
+  type?: string;
+  start?: Date;
+  end?: Date;
+  progress?: number;
 }
 
 let todoItems: TodoItem[] = [
   {
-    id: 1,
-    text: "Learn React",
-    done: true,
+    start: new Date(),
+    id: "1",
+    name: "Learn React",
   },
   {
-    id: 2,
-    text: "Learn Rakkas.JS testing",
-    done: false,
+    id: "2",
+    name: "Learn Rakkas.JS testing",
   },
 ];
 
