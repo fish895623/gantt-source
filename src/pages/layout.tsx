@@ -28,11 +28,6 @@ const MainLayout: Layout = ({ error, children }) => (
               About
             </StyledLink>
           </li>
-          <li>
-            <StyledLink href="/todo" activeClass={css.activeLink}>
-              Todo
-            </StyledLink>
-          </li>
         </ul>
       </nav>
     </header>
